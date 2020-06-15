@@ -1,0 +1,43 @@
+body{
+	margin: 0% ;
+	background-color: #F78181;
+}
+header{
+	float: center;
+	display: block;
+	text-align: center;
+}
+
+header p{
+		display: block;
+	text-align: left;
+}
+.menu ul{
+	list-style-type: none:
+	margin:0;
+	padding: 0;
+	overflow: hidden; 
+    background-color: black;
+}
+.menu li{
+	float:center;
+ }
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+.num{
+	padding: 0;
+	text-align:center;
+}
+
+.todo{
+	background-color: black;
+	text-align:center;
+}
+

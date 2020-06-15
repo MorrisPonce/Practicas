@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Numeros </title>
+	<link rel="stylesheet" href="numeroxCSS/numerox.css">
+</head>
+<body>
+	<header> <h1>Eligue un numero entero</h1>
+	<p>Rodriguez Ponce Aldo Andres </p> 
+	<p>EVN 305</p>
+
+	 </header>
+	<form name="frmMul" class="mov">
+
+	<input type="text" name="num" placeholder="Ingresa numero">
+	<input type="button" onclick="mandar(this.value);" value="Resultado">
+	<h2 id="Multiplicar"></h2>
+    </form>
+	<script type="text/javascript">
+		function mandar(){
+			var numero=parseInt(frmMul.num.value);
+			var i=1;
+			
+			var resul=1;
+			while(i<=numero){
+
+
+				resul=resul*i;
+				i++;
+			}
+			document.getElementById("Multiplicar").innerHTML=resul;
+	}
+
+	</script>
+
+</body>
+</html>

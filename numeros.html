@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Numeros positivos </title>
+	<link rel="stylesheet"  href="numerosCSS/numeros.css">
+</head>
+<body>
+	<header> <h1>Numeros positivos</h1>
+
+	</header>
+	<div class="mov">
+		<p> Deberas ingresar solamente numeros positivos, en caso de ingresar un numero negativo o el numero cero terminara el trabajo</p>
+		<h3 id="resultado"> La suma es:Nada </h3>
+		<input type="button" value="Inicio" onclick="Siguiente();"> 
+	</div>
+
+	<script type="text/javascript">
+		function  Siguiente(){
+			var suma=0;
+
+			do{
+				var num = parseInt(prompt("ingrese un numero",));
+				suma=suma+num;
+			}
+			while(num>0);
+			var resultado=suma-num;
+			document.getElementById('resultado').innerHTML=" la suma es " + resultado;
+
+				
+			}
+		
+		
+	</script>
+
+<footer>
+    <p> Rodriguez Ponce Aldo Andres </p> 
+	<p>EVN 305</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Ciudad </title>
+    <link rel="stylesheet" href="ciudadCSS/ciudad.css">
+</head>
+<body>
+    <header> <h1>Gracias por su participacion </h1>
+    <p> Rodriguez Ponce Aldo Andres </p>
+    <p> EVN 305 </p>
+     </header>
+
+
+    <script type="text/javascript">
+
+    var lugar = prompt("Indica de parte de la ciudad eres :Norte,Centro,Sur");
+    var mensaje = "";
+
+    switch (lugar){
+        case "Norte":
+        mensaje = "Usted el del NORTE de la ciudad";
+        break;
+
+        case "Centro":
+        mensaje = "Usted es del CENTRO de la ciudad";
+        break;
+
+        case "Sur":
+        mensaje = "Usted es del SUR de la ciudad";
+        break;
+
+        default:
+        mensaje = "Error verifica que todo esta bien escrito";
+    }
+
+    alert(mensaje);
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+    <link rel="stylesheet" href="calculadoraCSS/calculadora.css">
+</head>
+<header class="menu"><h1>Calculadora</h1>
+<p> Rodriguez Ponce Aldo Andres </p> </header>
+
+<body>
+     <section class="todo">
+      <input type="button" value="Sumar" onclick="Sumar();">
+      <input type="button" value="Restar" onclick="Restar();">
+      <input type="button" value="Multiplicar" onclick="Multiplicar();">
+      <input type="button" value="Dividir" onclick="Dividir();">
+      <textarea id="salida" cols="3" rows="5"></textarea>
+     </section>
+     
+     <section class="num">
+     Numero1:<input type="text" id="n1">
+     Numero2:<input type="text" id="n2">
+     </section>
+
+        <script type="text/javascript">
+
+        function Sumar(){
+            var num1=Number(document.getElementById('n1').value); 
+            var num2=Number(document.getElementById('n2').value);
+        	   document.getElementById("salida").innerHTML=num1+num2;
+        } 
+
+        function Restar(){
+            var num1=Number(document.getElementById('n1').value); 
+            var num2=Number(document.getElementById('n2').value);
+               document.getElementById("salida").innerHTML=num1-num2;
+
+        }
+
+        function Multiplicar(){
+            var num1=Number(document.getElementById('n1').value); 
+            var num2=Number(document.getElementById('n2').value);
+        	    document.getElementById("salida").innerHTML=num1*num2;
+        }
+
+        function Dividir(){
+            var num1=Number(document.getElementById('n1').value); 
+            var num2=Number(document.getElementById('n2').value);           document.getElementById("salida").innerHTML=num1/num2;
+        }
+
+        </script>
+  
+</body>
+<footer></footer>
+</html>

@@ -1,0 +1,16 @@
+body{
+	margin: 0% ;
+	background-color: #F78181;
+}
+header h1{
+	float: center;
+	display: block;
+	text-align: center;
+}
+header p{
+		display: block;
+	text-align: left;
+}
+.mov{
+	text-align: center;
+}
